@@ -9,8 +9,8 @@ class Conexion
 
     private $host = "localhost";
     private $bd = "maestro_db";
-    private $user = "root";
-    private $pass = "rootroot";
+    private $user = "maestro_jacuestaf";
+    private $pass = "#passwordJa2020";
 
     public function get_Conexion()
     {
