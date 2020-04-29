@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Inicio de Sesion</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+
+  <header>
+    <div class="navbar-fixed">
+      <div class="logo">
+        <div class="logo-img">
+          <img src="./images/logo.png" alt="">
+        </div>
+
+        <div class="logo-letras">
+          <p>ESCUELA PARTICULAR EL GRAN MAESTRO</p>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <center>
+    <main>
+      <center>
+        <div class="section container" id="seccion">
+          <div class="row card-panel" id="row">
+            <img src="./images/intro-img.jpeg" id="img" width="100%">
+            <br>
+            <form class="col s12" method="POST" action="./controller/ClassControllerLogin.php" id="formulario">
+              <div class="input-field col s12">
+                <input required="true" id="usuario" name="usuario" type="text" class="validate" onkeypress="return soloMail(event)">
+                <label id="select-input" for="usuario">USUARIO * </label>
+              </div>
+              <div class="input-field col s12">
+                <input required="true" id="password" name="pass" type="password" class="validate" onkeypress="return soloMail(event)">
+                <label id="select-input" for="password">CONTRASEÑA * </label>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Iniciar Sesion
+                <i class="material-icons left">verified_user</i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </center>
+    </main>
+  </center>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

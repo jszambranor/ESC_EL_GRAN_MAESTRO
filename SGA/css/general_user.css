@@ -1,0 +1,167 @@
+@media screen and (min-width: 1000px) {
+  .logo-letras {
+    font-size: 2rem;
+  }
+
+  #main{
+    padding-left: 200px;
+  }
+  .contenedor {
+    width: 40%;
+    background-color: #FAD5D5;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    float: left;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
+  }
+
+  .contenedor1 {
+    width: 70%;
+    background-color: #FAD5D5;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    float: left;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
+  }
+
+  .contenido {
+    margin-top: 0%;
+  }
+
+  .card {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin-left: 6%;
+  }
+
+  #card1 {
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width : 997px) {
+  .contenedor {
+    width: 90%;
+    background-color: #FAD5D5;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .contenedor1 {
+    width: 90%;
+    background-color: #FAD5D5;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .logo-letras{
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin-left: 6%;
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 17px;
+  }
+}
+
+.navbar-fixed {
+  background-color: #95113E;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-trigger {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  width: 70%;
+  margin-left: 5%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-letras {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-style: bold;
+  align-items: center;
+}
+
+#form-tittle {
+  background-color: #12324B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 50px;
+  align-items: center;
+}
+
+#btn {
+  background-color: #95113E;
+  width: 80%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.titulo {
+  background-color: #FC603E;
+  height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  clear: left;
+  display: flex;
+  margin-top: 0%;
+  justify-content: center;
+  font-style: bold;
+}
+
+p {
+  display: flex;
+  margin-top: 0%;
+  text-align: center;
+  justify-content: center;
+}
+
+.contenido {
+  margin-bottom: 3%;
+}
+
+a {
+  font-style: bold;
+  color: black;
+}
