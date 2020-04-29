@@ -7,7 +7,6 @@ class Conexion
 
     }
     /*prueba*/
-
     private $host = "localhost";
     private $bd = "maestro_db";
     private $user = "maestro_jacuestaf";
