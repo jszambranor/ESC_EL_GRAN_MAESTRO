@@ -139,7 +139,7 @@ class NuevasMatriculas
       }
 
       try {
-        $query = "CALL joaquing_db.MATRICULAS(:_CEDULA,:_PARALELO)";
+        $query = "CALL maestro_db.MATRICULAS(:_CEDULA,:_PARALELO)";
       } catch (PDOException $e) {
         echo '<script> alert("¡Error! NO SE CREAR LA CONSULTA")</script>';
       }
@@ -180,7 +180,7 @@ class NuevasMatriculas
       }
 
       try {
-        $query="SELECT COD_CURSO FROM joaquing_db.MATRICULAS WHERE CEDULA_ALUMNO = :_CEDULA";
+        $query="SELECT COD_CURSO FROM maestro_db.MATRICULAS WHERE CEDULA_ALUMNO = :_CEDULA";
       } catch (PDOException $e) {
         echo '<script> alert("¡Error! NO SE PUEDE CREAR LA CONSULTA")</script>';
       }

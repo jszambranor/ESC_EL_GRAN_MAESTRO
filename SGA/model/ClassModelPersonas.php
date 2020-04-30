@@ -48,7 +48,7 @@ class Personas
         }
 
         try {
-            $query = "CALL maestro_dbb.MATRICULAS_PRE(
+            $query = "CALL maestro_db.MATRICULAS_PRE(
               :_CEDULA,:_FOTO,:_NOMBRES,:_APELLIDOS,:_FECHA,:_NACIONALIDAD,:_DIRECCION,:_TELEFONO,:_CORREO,:_OCUPACION,:_NIVEL,:_WHATSAPP,:_ANTECEDENTES,:_VACUNAS,:_INSTITUCION,:_NOMBRE_INSTITUCION,:_CURSO,
               :_CEDULA_R,:_FOTO_R,:_NOMBRES_R,:_APELLIDOS_R,:_FECHA_R,:_NACIONALIDAD_R,:_DIRECCION_R,:_TELEFONO_R,:_CORREO_R,:_OCUPACION_R,:_NIVEL_R,:_WHATSAPP_R)";
             $stmt = $conexion->prepare($query);

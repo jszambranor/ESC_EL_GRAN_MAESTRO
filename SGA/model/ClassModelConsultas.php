@@ -115,7 +115,7 @@ class Consultas
     {
       $object = new Conexion();
       $conexion = $object->get_Conexion();
-      $query = "SELECT * FROM joaquing_db.DOCENTES WHERE CEDULA = :_CEDULA";
+      $query = "SELECT * FROM maestro_db.DOCENTES WHERE CEDULA = :_CEDULA";
       $stmt=$conexion->prepare($query);
       $stmt->bindParam(':_CEDULA',$arg_Cedula,PDO::PARAM_STR);
       $stmt->execute();
@@ -126,7 +126,7 @@ class Consultas
       }elseif($data['COD_CURSO'] == '2DO' && $data['COD_CURSO'] == '3RO' && $data['COD_CURSO'] == '4TO' && $data['COD_CURSO'] == '5TO' && $data['COD_CURSO'] == '6TO' && $data['COD_CURSO'] == '7MO'){
         $curso = '2-7';
       }
-      $query = "SELECT * FROM joaquing_db.CATEDRAS WHERE CODIGO = $curso";
+      $query = "SELECT * FROM maestro_db.CATEDRAS WHERE CODIGO = $curso";
       $stmt1=$conexion->prepare($query);
       $stmt1->execute();
       $cadena = "";
