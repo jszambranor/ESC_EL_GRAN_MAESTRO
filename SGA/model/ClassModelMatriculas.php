@@ -19,7 +19,7 @@ class NuevasMatriculas
         }
 
         try {
-            $query = "SELECT CEDULA,CEDULA_REPR FROM joaquing_db.ALUMNOS_PRE WHERE CEDULA = :_CEDULA";
+            $query = "SELECT CEDULA,CEDULA_REPR FROM maestro_db.ALUMNOS_PRE WHERE CEDULA = :_CEDULA";
             $stmt=$conexion->prepare($query);
             $stmt->bindParam(':_CEDULA', $arg_Cedula, PDO::PARAM_STR);
         } catch (PDOException $e) {
@@ -50,7 +50,7 @@ class NuevasMatriculas
         }
 
         try {
-            $query = 'SELECT CEDULA,FOTO,NOMBRES,APELLIDOS,COD_CURSO FROM joaquing_db.PERSONAS_PRE,joaquing_db.MATRICULAS_PRE WHERE CEDULA = CEDULA_ALUMNO AND COD_CURSO = :_CURSO';
+            $query = 'SELECT CEDULA,FOTO,NOMBRES,APELLIDOS,COD_CURSO FROM maestro_db.PERSONAS_PRE,maestro_db.MATRICULAS_PRE WHERE CEDULA = CEDULA_ALUMNO AND COD_CURSO = :_CURSO';
             $stmt=$conexion->prepare($query);
             $stmt->bindParam(':_CURSO', $cod_Curso);
         } catch (PDOException $e) {

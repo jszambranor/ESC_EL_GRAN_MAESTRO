@@ -21,7 +21,7 @@ class Consultas
             }
 
             try {
-                $query = "SELECT * FROM joaquing_db.PERSONAS_PRE WHERE CEDULA = :_CEDULA";
+                $query = "SELECT * FROM maestro_db.PERSONAS_PRE WHERE CEDULA = :_CEDULA";
                 $stmt = $conexion->prepare($query);
                 $stmt->bindParam(':_CEDULA', $arg_Cedula, PDO::PARAM_STR);
             } catch (PDOException $e) {
