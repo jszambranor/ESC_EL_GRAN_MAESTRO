@@ -14,7 +14,7 @@ class Calificaciones
   {
     $objeto = new Conexion();
     $conexion = $objeto->get_Conexion();
-    $query = "SELECT * FROM joaquing_db.CALIFICACIONES WHERE CEDULA_ALUMNO = :_CEDULA AND COD_QUIMESTRE = :_QUIMESTRE AND COD_PARCIAL = :_PARCIAL AND COD_LECTIVO = :_COD_LECTIVO";
+    $query = "SELECT * FROM maestro_db.CALIFICACIONES WHERE CEDULA_ALUMNO = :_CEDULA AND COD_QUIMESTRE = :_QUIMESTRE AND COD_PARCIAL = :_PARCIAL AND COD_LECTIVO = :_COD_LECTIVO";
     $stmt = $conexion->prepare($query);
     $stmt->bindParam(':_CEDULA',$arg_Cedula,PDO::PARAM_STR);
     $stmt->bindParam(':_QUIMESTRE',$arg_Quimestre,PDO::PARAM_INT);

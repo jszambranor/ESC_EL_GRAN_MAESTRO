@@ -21,7 +21,7 @@ class Usuarios
         }
 
         try {
-            $query = "DELETE FROM joaquing_db.USUARIOS WHERE USUARIO = :_CEDULA";
+            $query = "DELETE FROM maestro_db.USUARIOS WHERE USUARIO = :_CEDULA";
             $stmt = $conexion->prepare($query);
             $stmt->bindParam(':_CEDULA', $arg_Cedula, PDO::PARAM_STR);
         } catch (PDOException $e) {

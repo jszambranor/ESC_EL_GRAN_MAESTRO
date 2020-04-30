@@ -21,7 +21,7 @@ class Docentes
         }
 
         try {
-          $query = "DELETE FROM joaquing_db.DOCENTES WHERE CEDULA = :_CEDULA";
+          $query = "DELETE FROM maestro_db.DOCENTES WHERE CEDULA = :_CEDULA";
           $stmt = $conexion->prepare($query);
           $stmt->bindParam(':_CEDULA',$arg_Cedula,PDO::PARAM_STR);
         } catch (PDOException $e) {
@@ -59,7 +59,7 @@ class Docentes
       }
 
       try {
-          $query = "SELECT joaquing_db.NEW_DOCENTE(:_Curso,:_Cedula,:_Foto,:_Nombres,:_Apellidos,:_Fecha,:_Edad,:_Nacionalidad,:_Direccion,:_Telefono,:_Correo,:_Ocupacion,:_Profesion,:_Nivel,:_Whatsapp)";
+          $query = "SELECT maestro_db.NEW_DOCENTE(:_Curso,:_Cedula,:_Foto,:_Nombres,:_Apellidos,:_Fecha,:_Edad,:_Nacionalidad,:_Direccion,:_Telefono,:_Correo,:_Ocupacion,:_Profesion,:_Nivel,:_Whatsapp)";
           $stmt = $conexion->prepare($query);
           $stmt->bindParam(':_Curso', $arg_Curso, PDO::PARAM_STR);
           $stmt->bindParam(':_Cedula', $arg_Cedula, PDO::PARAM_STR);
