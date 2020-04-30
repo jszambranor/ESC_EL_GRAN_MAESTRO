@@ -15,7 +15,7 @@ class ModelLogin
   {
     $objeto = new Conexion();
     $conexion = $objeto->get_Conexion();
-    $query = "SELECT * FROM joaquing_db.USUARIOS WHERE USER = :_USUARIO AND PASSWORD = :_PASSWORD";
+    $query = "SELECT * FROM maestro_db.USUARIOS WHERE USER = :_USUARIO AND PASSWORD = :_PASSWORD";
     try {
       $stmt = $conexion->prepare($query);
       $stmt->bindParam(':_USUARIO',$arg_User,PDO::PARAM_STR);
